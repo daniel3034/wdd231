@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #F8F8FF; /* Ghost White */
+    color: #4B0082; /* Indigo */
+    padding: 20px;
+}
+
+header {
+    background-color: #6A0DAD; /* Violet */
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #E6E6FA; /* Lavender */
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section {
+    flex: 1 1 45%; /* Responsive columns */
+    margin: 10px;
+    background-color: #FFF; /* White */
+    padding: 15px;
+    border: 1px solid #4B0082; /* Indigo */
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default */
+        width: 100%; /* Full width for mobile */
+    }
+
+    nav.active ul {
+        display: flex; /* Show on click */
+    }
+
+    .hamburger {
+        display: block; /* Show on small screens */
+        cursor: pointer;
+        background-color: #6A0DAD; /* Violet */
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for small screens */
+    }
+}
+
+/* Hide hamburger icon on larger screens */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; /* Hidden on larger screens */
+    }
+}
+
+/* Cards for the subjects */
+.course-card {
+    border: 1px solid #6A0DAD; /* Use a vibrant purple for the border */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f3f0ff; /* Light purple background */
+}
+
+.course-card.completed {
+    background-color: #e1bee7; /* Light purple for completed courses */
+    border-color: #9c27b0; /* Darker purple for completed border */
+}
+
+
+
