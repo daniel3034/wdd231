@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Tech Innovators",
+        "address": "123 Tech St, Tech City, TC 12345",
+        "phone": "(123) 456-7890",
+        "website": "https://www.techinnovators.com",
+        "image": "tech-innovators.jpg",
+        "membershipLevel": 3,
+        "additionalInfo": "Leading tech solutions provider."
+    },
+    {
+        "name": "Green Earth Supplies",
+        "address": "456 Eco Ave, Green Town, GT 67890",
+        "phone": "(098) 765-4321",
+        "website": "https://www.greenearthsupplies.com",
+        "image": "green-earth.jpg",
+        "membershipLevel": 2,
+        "additionalInfo": "Eco-friendly office supplies."
+    },
+    {
+        "name": "Fitness Hub",
+        "address": "789 Fit Blvd, Wellness City, WC 34567",
+        "phone": "(555) 123-4567",
+        "website": "https://www.fitnesshub.com",
+        "image": "fitness-hub.jpg",
+        "membershipLevel": 1,
+        "additionalInfo": "Your local gym for fitness."
+    },
+    {
+        "name": "Artisan Bakery",
+        "address": "321 Bake St, Bread Town, BT 23456",
+        "phone": "(555) 987-6543",
+        "website": "https://www.artisanbakery.com",
+        "image": "artisan-bakery.jpg",
+        "membershipLevel": 3,
+        "additionalInfo": "Freshly baked goods daily."
+    },
+    {
+        "name": "Home & Garden Center",
+        "address": "654 Garden Rd, Green City, GC 78901",
+        "phone": "(555) 345-6789",
+        "website": "https://www.homeandgarden.com",
+        "image": "home-garden.jpg",
+        "membershipLevel": 2,
+        "additionalInfo": "All your gardening needs."
+    },
+    {
+        "name": "Auto Service Center",
+        "address": "987 Auto Way, Car City, CC 56789",
+        "phone": "(555) 765-4321",
+        "website": "https://www.autoservice.com",
+        "image": "auto-service.jpg",
+        "membershipLevel": 1,
+        "additionalInfo": "Quality auto repairs and services."
+    },
+    {
+        "name": "Book Nook",
+        "address": "246 Read St, Literature Town, LT 67890",
+        "phone": "(555) 678-1234",
+        "website": "https://www.booknook.com",
+        "image": "book-nook.jpg",
+        "membershipLevel": 3,
+        "additionalInfo": "Your cozy neighborhood bookstore."
+    }
+]
