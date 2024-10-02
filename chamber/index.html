@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Home Page.">
+    <meta name="author" content="Daniel Holguin Delgado">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2023/09/Medellin-es-el-corazon-1-1024x512.jpg" />
+    <meta property="og:url" content="https://daniel3034.github.io/wdd231/chamber/index.html" />
+    <title>Chamber Home Page</title>
+</head>
+<body>
+    <header>
+        <h1>Chamber Home Page</h1>
+        <div class="hamburger">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="https://github.com/daniel3034">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/daniel-holguin-delgado">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/heroimage.jpg" alt="Chamber of Commerce Hero Image">
+            <div class="hero-text">
+                <h1>Welcome to the Chamber of Commerce</h1>
+                <p>Your business gateway to success.</p>
+                <a href="https://daniel3034.github.io/wdd231/chamber/directory.html" class="cta-button">Join Us Today!</a>
+            </div>
+        </section>
+
+    <section class="current-events">
+        <h2>Current Events</h2>
+        <ul>
+            <li>Business Networking Event - October 15, 2024</li>
+            <li>Annual Gala - November 20, 2024</li>
+            <li>Holiday Market - December 5, 2024</li>
+        </ul>
+    </section>
+
+    <section class="weather">
+        <h2>Current Weather</h2>
+        <div id="weather-info">
+            <!-- Weather data will be displayed here by JavaScript -->
+        </div>
+    </section>
+
+    <section class="spotlights">
+        <h2>Company Spotlights</h2>
+        <div class="spotlight-container">
+            <div class="spotlight">
+                <img src="images/tech-innovators.jpg" alt="Company 1">
+                <h3>Tech Innovators</h3>
+                <p>Leading tech solutions provider.</p>
+            </div>
+            <div class="spotlight">
+                <img src="images/green-earth.jpg" alt="Company 2">
+                <h3>Green Earth Supplies</h3>
+                <p>Eco-friendly office supplies.</p>
+            </div>
+            <div class="spotlight">
+                <img src="images/fitness-hub.jpg" alt="Company 3">
+                <h3>Fitness Hub</h3>
+                <p>Your local gym for fitness.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Holguin Delgado. Colombia.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/index.js" defer></script>
+
+</body>
+</html>
