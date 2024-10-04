@@ -50,7 +50,7 @@ main {
 }
 
 section {
-    flex: 1 1 45%; /* Responsive columns */
+    flex: 1 1 50%; /* Responsive columns */
     margin: 10px;
     background-color: #FFF; /* White */
     padding: 15px;

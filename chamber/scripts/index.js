@@ -86,43 +86,62 @@ document.addEventListener('DOMContentLoaded', fetchWeather);
 
 // Premium Memberships
 
-async function fetchMembers() {
-    try {
-        const response = await fetch('data/members.json'); // Adjust the path if needed
-        const members = await response.json();
-
-        // Filter Gold or Silver members
-        const qualifiedMembers = members.filter(member => 
-            member.membershipLevel === 3 || member.membershipLevel === 2
+document.addEventListener('DOMContentLoaded', () => {
+    const spotlightsContainer = document.querySelector('.spotlights');
+  
+    // Fetch the members data
+    fetch('data/members.json')
+      .then(response => response.json())
+      .then(data => {
+        // Filter only Silver (2) and Gold (3) members
+        const qualifiedMembers = data.filter(member => 
+          member.membershipLevel === 2 || member.membershipLevel === 3
         );
-
-        // Randomly select 2-3 members
-        const selectedMembers = [];
-        while (selectedMembers.length < 3 && qualifiedMembers.length > 0) {
-            const randomIndex = Math.floor(Math.random() * qualifiedMembers.length);
-            selectedMembers.push(qualifiedMembers.splice(randomIndex, 1)[0]);
-        }
-
-        // Display selected members in the spotlight section
-        const spotlightContainer = document.querySelector('.spotlight-container');
-        selectedMembers.forEach(member => {
-            const memberHtml = `
-                <div class="spotlight">
-                    <img src="images/${member.image}" alt="${member.name} Logo" style="width:100%; height:auto;">
-                    <h3>${member.name}</h3>
-                    <p>Address: ${member.address}</p>
-                    <p>Phone: ${member.phone}</p>
-                    <p>Membership Level: ${member.membershipLevel === 3 ? 'Gold' : 'Silver'}</p>
-                    <p>${member.additionalInfo}</p>
-                    <a href="${member.website}" target="_blank">Visit Website</a>
-                </div>
-            `;
-            spotlightContainer.innerHTML += memberHtml;
-        });
-
-    } catch (error) {
-        console.error('Error fetching member data:', error);
+  
+        // Randomly select two or three members
+        const shuffledMembers = shuffleArray(qualifiedMembers).slice(0, 3);
+  
+        // Display selected members
+        displaySpotlights(shuffledMembers, spotlightsContainer);
+      })
+      .catch(error => console.error('Error fetching members:', error));
+  });
+  
+  // Helper function to shuffle array (Fisher-Yates shuffle)
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-}
-
-document.addEventListener('DOMContentLoaded', fetchMembers);
+    return array;
+  }
+  
+  // Function to display members in the spotlights section
+  function displaySpotlights(members, container) {
+    members.forEach(member => {
+      const spotlight = document.createElement('div');
+      spotlight.classList.add('spotlight');
+  
+      spotlight.innerHTML = `
+        <img src="images/${member.image}" alt="${member.name} logo">
+        <h3>${member.name}</h3>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p><strong>Membership Level:</strong> ${getMembershipLevelName(member.membershipLevel)}</p>
+      `;
+  
+      container.appendChild(spotlight);
+    });
+  }
+  
+  // Helper function to convert membership level number to name
+  function getMembershipLevelName(level) {
+    switch(level) {
+      case 3: return 'Gold';
+      case 2: return 'Silver';
+      case 1: return 'Bronze';
+      default: return 'Unknown';
+    }
+  }
+  
