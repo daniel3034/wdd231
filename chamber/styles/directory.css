@@ -58,12 +58,6 @@ section {
     border-radius: 8px;
 }
 
-footer {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.9em;
-}
-
 /* Responsive Navigation */
 @media (max-width: 768px) {
     nav ul {
@@ -132,4 +126,41 @@ main {
 .member-card img {
     max-width: 100%; /* Responsive images */
     height: auto;
+}
+
+/* footer */
+footer {
+    background-color: #6A0DAD; /* Violet, same as header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 2px solid #4B0082; /* Indigo */
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #E6E6FA; /* Light Lavender for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white; /* Change link color on hover */
+}
+
+#lastModified {
+    font-style: italic;
+    color: #DDD; /* Light grey to contrast */
+}
+
+/* Responsive Footer: Stack content vertically on small screens */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8em; /* Slightly smaller text on mobile */
+    }
 }
