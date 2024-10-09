@@ -104,12 +104,6 @@ footer {
 }
 
 /* Main Content */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
 .member-card {
     flex: 1 1 45%; /* Responsive columns for grid */

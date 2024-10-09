@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Join Page.">
+    <meta name="author" content="Daniel Holguin Delgado">
+    <link rel="stylesheet" href="styles/join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber of Commerce Join Page" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2023/09/Medellin-es-el-corazon-1-1024x512.jpg" />
+    <meta property="og:url" content="https://daniel3034.github.io/wdd231/chamber/join.html" />
+    <title>Chamber Join Page</title>
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce Join Page</h1>
+        <div class="hamburger">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="https://github.com/daniel3034">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/daniel-holguin-delgado">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Join the Chamber</h2>
+            <form action="thankyou.html" method="get">
+                <!-- First Name -->
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required title="Enter your first name" autocomplete="given-name">
+
+                <!-- Last Name -->
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required title="Enter your last name" autocomplete="family-name">
+
+                <!-- Organizational Title -->
+                <label for="orgTitle">Organizational Title</label>
+                <input type="text" id="orgTitle" name="orgTitle" title="Your title within the organization" autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}" placeholder="e.g., Manager" required>
+
+                <!-- Email -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required title="Enter a valid email" autocomplete="email" placeholder="example@domain.com">
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required title="Enter your mobile number" autocomplete="tel">
+
+                <!-- Organization Name -->
+                <label for="organization">Organization Name</label>
+                <input type="text" id="organization" name="organization" required title="Enter your organization name" autocomplete="organization">
+
+                <!-- Membership Level -->
+                <label for="membershipLevel">Membership Level</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="NP">Non-Profit</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                </select>
+
+                <!-- Organization Description -->
+                <label for="description">Organization Description</label>
+                <textarea id="description" name="description" title="Describe your organization" rows="4" required></textarea>
+
+                <!-- Timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <!-- Submit Button -->
+                <input type="submit" value="Join Now">
+            </form>
+        </section>
+
+                <!-- Membership Cards Section -->
+        <section id="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card-container">
+                <div class="card" id="np-card">
+                    <h3>Non-Profit</h3>
+                    <p>No fees for non-profit organizations.</p>
+                    <button class="open-modal" data-target="np-modal">Learn More</button>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits package.</p>
+                    <button class="open-modal" data-target="bronze-modal">Learn More</button>
+                </div>
+                <div class="card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Additional benefits like event discounts.</p>
+                    <button class="open-modal" data-target="silver-modal">Learn More</button>
+                </div>
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits including spotlight positions.</p>
+                    <button class="open-modal" data-target="gold-modal">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div class="modal" id="np-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Non-Profit Membership</h3>
+                <p>As a non-profit organization, you'll receive...</p>
+            </div>
+        </div>
+        <div class="modal" id="bronze-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Bronze Membership</h3>
+                <p>As a Bronze member, you'll enjoy...</p>
+            </div>
+        </div>
+        <div class="modal" id="silver-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Silver Membership</h3>
+                <p>Silver members receive...</p>
+            </div>
+        </div>
+        <div class="modal" id="gold-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Gold Membership</h3>
+                <p>As a Gold member, you'll benefit from...</p>
+            </div>
+        </div>
+
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Holguin Delgado. Colombia.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/join.js" defer></script>
+
+</body>
+</html>
