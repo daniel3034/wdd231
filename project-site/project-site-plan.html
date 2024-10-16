@@ -5,74 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Project Site Plan.">
     <meta name="author" content="Daniel Holguin Delgado">
-    <link rel="stylesheet" href="project-site-plan.html">
+    <link rel="stylesheet" href="styles/project-site-plan.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 
     <meta property="og:title" content="Project Site Plan" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2023/09/Medellin-es-el-corazon-1-1024x512.jpg" />
-    <meta property="og:url" content="https://daniel3034.github.io/projectsite/project-site-plan.html" />
+    <meta property="og:url" content="https://daniel3034.github.io/project-site/project-site-plan.html" />
     <title>Project Site Plan</title>
 </head>
 
 <body>
-    <h1> Project Site Plan </h1>
+    <h1>Project Site Plan</h1>
+    
     <h2>1. Site Name</h2>
-    <p>Online Recipe Repository</p>
+    <p><strong>Online Recipe Repository</strong></p>
     <p>Reason for selection: This name clearly conveys the site's purpose of being a centralized location for various recipes, making it easy for users to understand what the site offers.</p>
 
     <h2>2. Site Purpose</h2>
     <p>The site provides a platform for users to browse, search, and submit recipes. It will offer features like recipe categories, user-generated content, and a rating system to enhance user engagement.</p>
 
     <h2>3. Scenarios</h2>
-    <p>Scenario 1: How can I find healthy recipes for dinner?</p>
-    <p>Scenario 2: Can I submit my own recipes to share with others?</p>
+    <p><strong>Scenario 1:</strong> How can I find healthy recipes for dinner?</p>
+    <p><strong>Scenario 2:</strong> Can I submit my own recipes to share with others?</p>
 
     <h2>4. Color Schema</h2>
-    <p>Color 1: Light Green (#c8e6c9) - Used for background and section highlights.</p>
-    <p>Color 2: Dark Green (#2e7d32) - Used for headings and buttons.</p>
+    <p><strong>Color 1:</strong> Light Green (#c8e6c9) - Used for background and section highlights.</p>
+    <p><strong>Color 2:</strong> Dark Green (#2e7d32) - Used for headings and buttons.</p>
 
     <h2>5. Typography</h2>
-    <p>Font 1: 'Roboto', sans-serif - Used for body text.</p>
-    <p>Font 2: 'Lobster', cursive - Used for headings.</p>
-    <p>Font 3 (optional): 'Open Sans', sans-serif - Used for buttons and links.</p>
+    <p><strong>Font 1:</strong> 'Roboto', sans-serif.</p>
 
     <h2>6. Wireframe</h2>
-    <p>Design a wireframe for your homepage layout:</p>
+    <p>Design a wireframe for homepage layout:</p>
 
     <h3>Mobile View:</h3>
     <p>Header with logo and navigation.</p>
     <p>Main section with featured recipes.</p>
     <p>Search bar.</p>
     <p>Footer with links to social media.</p>
+    <img src="images/wireframe-mob.png" alt="Wireframe Mobile Mobile View" />
+    
     <h3>Desktop View:</h3>
     <p>Larger header with logo and navigation.</p>
     <p>Side menu with categories.</p>
     <p>Main content area for featured recipes and search results.</p>
     <p>Footer with links and contact information.</p>
+    <img src="images/wireframe-desk.png" alt="Wireframe Mobile Desktop View" />
 
     <h2>7. CSS</h2>
     <p>Add basic CSS styles:</p>
+    
+    <pre><code>
+body {
+    background-color: #c8e6c9;
+    font-family: 'Roboto', sans-serif;
+}
 
-    <p>css</p>
-    <p>body {</p>
-        <p>background-color: #c8e6c9;</p>
-        <p>font-family: 'Roboto', sans-serif;</p>
-        <p>}</p>
+h1, h2, h3 {
+    color: #2e7d32;
+    font-family: 'Lobster', cursive;
+}
 
-            <p>h1, h2, h3 {</p>
-                <p>color: #2e7d32;</p>
-                    <p>font-family: 'Lobster', cursive;</p>
-                        <p>}</p>
+a {
+    color: #2e7d32;
+    text-decoration: none;
+}
 
-                            <p>a {</p>
-                                <p>color: #2e7d32;</p>
-                                    <p>text-decoration: none;</p>
-                                        <p>}</p>
-
-                                            <p>a:hover {</p>
-                                                <p>text-decoration: underline;</p>
-                                                    <p>}</p>
+a:hover {
+    text-decoration: underline;
+}
+    </code></pre>
 </body>
 </html>
