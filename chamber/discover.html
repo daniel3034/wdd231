@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Discover for local businesses.">
+    <meta name="author" content="Daniel Holguin Delgado">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber of Commerce Discover" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2023/09/Medellin-es-el-corazon-1-1024x512.jpg" />
+    <meta property="og:url" content="https://daniel3034.github.io/wdd231/chamber/discover.html" />
+    <title>Chamber of Commerce Discover</title>
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce Discover</h1>
+        <div class="hamburger">☰</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <aside class="sidebar">
+                <h2>Welcome</h2>
+                <div id="visitorMessage"></div>
+                <h3>Local Demographics</h3>
+                <p>Medellín, the second-largest city in Colombia, has a population of approximately 2.5 million people as of 2024. It is located in the Aburrá Valley in the Andes Mountains, giving it a unique geography and climate. Known as the "City of Eternal Spring" due to its pleasant year-round weather, Medellín is a vibrant metropolis with a diverse population.</p>
+                
+                <p>The majority of the population is of mixed European and Indigenous descent, with smaller Afro-Colombian and Indigenous communities. Spanish is the official language, and the city has a literacy rate of over 90%. Medellín is also known for its innovation, technology sectors, and efforts to reduce poverty, leading to significant urban development and social transformation in recent decades.</p>
+            
+                <p>The city's economy is diverse, with major sectors including manufacturing, trade, and services. Medellín is also a hub for higher education, with several renowned universities and institutions. The people of Medellín, known as "Paisas," are known for their hospitality, strong sense of community, and cultural pride.</p>
+                
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>ExpoSolar Colombia 2024</li>
+                    <p>From October 16 to 18, Medellín will host ExpoSolar, a major event focused on renewable energy, particularly solar power, at Quintaesencia Spa. It's a great opportunity for those interested in sustainability and new energy technologies.</p>
+
+                    <li>Sol Oculto Fest 2024</li>
+                    <p>Happening on October 19, this music festival will take place at La Pascasia and features a diverse lineup, promising an unforgettable evening filled with live performances.</p>
+                </ul>
+                <h3>Attractions</h3>
+                <ul>
+                    <li>Arví: A vast ecological nature park located in the hills above Medellín. It's perfect for hiking, picnicking, and enjoying the beautiful scenery. Visitors can take the cable car up to the park for stunning views. </li>
+
+                    <li>Plaza Botero: Located in the city center, this plaza is filled with sculptures by the famous Colombian artist Fernando Botero. It's a great place to explore Medellín's art scene and enjoy the vibrant atmosphere.</li>
+                    
+                    <li>Comuna 13: Once a dangerous neighborhood, Comuna 13 is now famous for its colorful street art and vibrant cultural tours that tell the story of Medellín's transformation.</li>
+                    
+                    <li>El Pueblito Paisa: A charming replica of a traditional Antioquian village, located on the Nutibara Hill, offering panoramic views of the city.</li>
+                    
+                    <li>Jardín Botánico: A lush botanical garden featuring thousands of plant species, a lake, and walking paths. It's a peaceful oasis in the middle of the city.</li>
+                </ul>
+            </aside>
+    
+            <section class="main-content">
+                <h2>Local Photos</h2>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="/chamber/images/image1.webp" loading="lazy" alt="Guatape">
+                        <figcaption>Guatape - A colorful town by the lake</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/chamber/images/image2.webp" loading="lazy" alt="Piedra del Penol">
+                        <figcaption>Piedra del Peñol - The famous monolith close to Medellin</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/chamber/images/image3.webp" loading="lazy" alt="El salto del Buey">
+                        <figcaption>El Salto del Buey - Majestic waterfall close to Medellin</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/chamber/images/image4.webp" loading="lazy" alt="Santa Fe de Antioquia">
+                        <figcaption>Santa Fe de Antioquia - Colonial heritage with beautiful views</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/chamber/images/image5.webp" loading="lazy" alt="Jardin">
+                        <figcaption>Jardin - Beautiful town in the mountains surrounded by flowers</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/chamber/images/image6.webp" loading="lazy" alt="Medellin">
+                        <figcaption>Medellin - The city of eternal spring</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Holguin Delgado. Colombia.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/discover.js" defer></script>
+
+</body>
+</html>

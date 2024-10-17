@@ -164,3 +164,54 @@ footer a:hover {
         font-size: 0.8em; /* Slightly smaller text on mobile */
     }
 }
+
+/* CSS for discover */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar and main content */
+    gap: 20px;
+}
+
+.sidebar {
+    background: #f4f4f4; /* Light gray background for sidebar */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between images */
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-gallery figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #4B0082;;
+    padding-top: 10px;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
