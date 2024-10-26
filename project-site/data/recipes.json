@@ -1,0 +1,321 @@
+[
+    {   
+        "id": 1,
+        "name": "Spaghetti Carbonara",
+        "description": "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
+        "ingredients": [
+            "200g spaghetti",
+            "100g pancetta",
+            "2 large eggs",
+            "50g grated Parmesan cheese",
+            "Salt and black pepper",
+            "1 tbsp olive oil"
+        ],
+        "instructions": [
+            "Boil the spaghetti according to package instructions.",
+            "In a skillet, cook the pancetta until crispy.",
+            "In a bowl, whisk the eggs and Parmesan.",
+            "Combine pasta, pancetta, and egg mixture. Serve immediately."
+        ],
+        "image": "images/spaghetti-carbonara.jpg"
+    },
+    {   
+        "id": 2,
+        "name": "Chicken Caesar Salad",
+        "description": "A fresh Caesar salad with grilled chicken, croutons, and Caesar dressing.",
+        "ingredients": [
+            "1 romaine lettuce head",
+            "200g grilled chicken breast",
+            "50g croutons",
+            "3 tbsp Caesar dressing",
+            "2 tbsp grated Parmesan cheese"
+        ],
+        "instructions": [
+            "Chop the lettuce and place it in a bowl.",
+            "Add grilled chicken slices and croutons.",
+            "Drizzle Caesar dressing, top with Parmesan, and serve."
+        ],
+        "image": "images/chicken-salad.jpg"
+    },
+    {   
+        "id": 3,
+        "name": "Classic Margherita Pizza",
+        "description": "A Margherita pizza with fresh basil, mozzarella, and tomato sauce.",
+        "ingredients": [
+            "1 pizza dough",
+            "1/2 cup tomato sauce",
+            "100g fresh mozzarella cheese",
+            "Fresh basil leaves",
+            "Salt and olive oil"
+        ],
+        "instructions": [
+            "Preheat the oven to 220°C (430°F).",
+            "Spread tomato sauce on the dough.",
+            "Top with mozzarella and basil.",
+            "Drizzle with olive oil and season with salt.",
+            "Bake for 10-12 minutes until golden."
+        ],
+        "image": "images/pizza.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Vegetable Stir Fry",
+        "description": "A quick, healthy vegetable stir fry with a soy-ginger sauce.",
+        "ingredients": [
+            "1 cup broccoli florets",
+            "1 bell pepper, sliced",
+            "1 carrot, sliced",
+            "1/2 cup snow peas",
+            "2 tbsp soy sauce",
+            "1 tbsp grated ginger",
+            "1 tbsp vegetable oil"
+        ],
+        "instructions": [
+            "Heat oil in a pan over medium-high.",
+            "Add ginger and stir-fry vegetables until tender.",
+            "Pour soy sauce and toss. Serve with rice or noodles."
+        ],
+        "image": "images/vegetable-stir-fry.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Chocolate Chip Cookies",
+        "description": "Soft and chewy chocolate chip cookies.",
+        "ingredients": [
+            "1 cup unsalted butter",
+            "1 cup sugar",
+            "1 cup brown sugar",
+            "2 large eggs",
+            "1 tbsp vanilla extract",
+            "3 cups flour",
+            "1 tsp baking soda",
+            "1/2 tsp salt",
+            "2 cups chocolate chips"
+        ],
+        "instructions": [
+            "Preheat oven to 175°C (350°F).",
+            "Cream butter and sugars, then add eggs and vanilla.",
+            "Gradually add flour, baking soda, and salt.",
+            "Stir in chocolate chips, drop onto baking sheet.",
+            "Bake for 10-12 minutes until golden."
+        ],
+        "image": "images/chocolate-chips.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Beef Tacos",
+        "description": "Traditional beef tacos with fresh toppings.",
+        "ingredients": [
+            "500g ground beef",
+            "1 onion, diced",
+            "2 garlic cloves, minced",
+            "1 tsp chili powder",
+            "Salt and pepper",
+            "8 taco shells",
+            "1 cup shredded lettuce",
+            "1/2 cup salsa",
+            "1/2 cup shredded cheese"
+        ],
+        "instructions": [
+            "Cook beef, onion, and garlic in a skillet until browned.",
+            "Season with chili powder, salt, and pepper.",
+            "Spoon into taco shells, add lettuce, salsa, and cheese."
+        ],
+        "image": "images/beef-tacos.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Avocado Toast",
+        "description": "Simple and delicious avocado toast.",
+        "ingredients": [
+            "2 slices of bread",
+            "1 avocado",
+            "Salt and pepper",
+            "1 tbsp olive oil",
+            "Red pepper flakes (optional)"
+        ],
+        "instructions": [
+            "Toast the bread to your liking.",
+            "Mash avocado and season with salt and pepper.",
+            "Spread avocado on toast, drizzle with olive oil, and add pepper flakes."
+        ],
+        "image": "images/avocado-toast.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Lemon Garlic Salmon",
+        "description": "Juicy salmon with a lemon-garlic butter sauce.",
+        "ingredients": [
+            "2 salmon fillets",
+            "1 lemon, sliced",
+            "2 garlic cloves, minced",
+            "2 tbsp butter",
+            "Salt and pepper",
+            "Fresh parsley, chopped"
+        ],
+        "instructions": [
+            "Season salmon with salt and pepper.",
+            "Melt butter in a skillet, add garlic and lemon slices.",
+            "Place salmon in the skillet and cook until done.",
+            "Garnish with parsley and serve."
+        ],
+        "image": "images/salmon.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Mushroom Risotto",
+        "description": "Creamy risotto with mushrooms and Parmesan cheese.",
+        "ingredients": [
+            "1 cup Arborio rice",
+            "2 cups vegetable broth",
+            "1 cup sliced mushrooms",
+            "1/2 onion, chopped",
+            "1/4 cup grated Parmesan",
+            "1 tbsp olive oil",
+            "Salt and pepper"
+        ],
+        "instructions": [
+            "Heat oil in a pot and cook onion until soft.",
+            "Add mushrooms and cook until tender.",
+            "Stir in rice and gradually add broth until absorbed.",
+            "Add Parmesan, season with salt and pepper, and serve."
+        ],
+        "image": "images/mushroom-risotto.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Caprese Salad",
+        "description": "A fresh salad with tomatoes, mozzarella, and basil.",
+        "ingredients": [
+            "2 ripe tomatoes, sliced",
+            "1 ball of fresh mozzarella, sliced",
+            "Fresh basil leaves",
+            "Salt and pepper",
+            "1 tbsp olive oil",
+            "Balsamic glaze (optional)"
+        ],
+        "instructions": [
+            "Layer tomato, mozzarella, and basil on a plate.",
+            "Drizzle with olive oil, season with salt and pepper.",
+            "Add balsamic glaze if desired."
+        ],
+        "image": "images/caprese-salad.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Pancakes",
+        "description": "Fluffy pancakes served with syrup and fresh berries.",
+        "ingredients": [
+            "1 cup all-purpose flour",
+            "2 tbsp sugar",
+            "1 tsp baking powder",
+            "1/2 tsp baking soda",
+            "1/4 tsp salt",
+            "1 cup buttermilk",
+            "1 large egg",
+            "2 tbsp melted butter",
+            "Butter for cooking",
+            "Fresh berries and maple syrup for serving"
+        ],
+        "instructions": [
+            "In a bowl, mix flour, sugar, baking powder, baking soda, and salt.",
+            "In another bowl, whisk buttermilk, egg, and melted butter.",
+            "Combine wet and dry ingredients until just mixed.",
+            "Heat a pan over medium heat and add butter.",
+            "Pour batter onto the pan, cooking until bubbles form, then flip.",
+            "Serve with fresh berries and syrup."
+        ],
+        "image": "images/pancakes.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Stuffed Bell Peppers",
+        "description": "Bell peppers filled with a savory mixture of rice, beans, and cheese.",
+        "ingredients": [
+            "4 bell peppers",
+            "1 cup cooked rice",
+            "1 can black beans, rinsed",
+            "1 cup corn",
+            "1 cup diced tomatoes",
+            "1 tsp cumin",
+            "1 tsp chili powder",
+            "Salt and pepper",
+            "1 cup shredded cheese"
+        ],
+        "instructions": [
+            "Preheat the oven to 180°C (350°F).",
+            "Cut the tops off the peppers and remove seeds.",
+            "In a bowl, mix rice, beans, corn, tomatoes, cumin, chili powder, salt, and pepper.",
+            "Stuff the mixture into the peppers and place them in a baking dish.",
+            "Top with shredded cheese and cover with foil.",
+            "Bake for 25 minutes, then uncover and bake for an additional 10 minutes."
+        ],
+        "image": "images/stuffed-bell-peppers.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Shrimp Tacos",
+        "description": "Delicious shrimp tacos topped with fresh cilantro and lime.",
+        "ingredients": [
+            "500g shrimp, peeled and deveined",
+            "2 tbsp olive oil",
+            "1 tsp cumin",
+            "1 tsp paprika",
+            "Salt and pepper",
+            "8 small tortillas",
+            "1 cup shredded cabbage",
+            "Fresh cilantro, chopped",
+            "Lime wedges for serving"
+        ],
+        "instructions": [
+            "In a bowl, toss shrimp with olive oil, cumin, paprika, salt, and pepper.",
+            "Heat a skillet over medium heat and cook shrimp until pink and cooked through.",
+            "Warm tortillas in a pan or microwave.",
+            "Assemble tacos with shrimp, cabbage, and cilantro.",
+            "Serve with lime wedges."
+        ],
+        "image": "images/shrimp-tacos.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Egg Fried Rice",
+        "description": "Quick and easy egg fried rice with vegetables.",
+        "ingredients": [
+            "2 cups cooked rice (preferably day-old)",
+            "2 eggs, beaten",
+            "1 cup mixed vegetables (peas, carrots, corn)",
+            "3 green onions, chopped",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat sesame oil in a large pan over medium heat.",
+            "Add beaten eggs and scramble until cooked. Remove and set aside.",
+            "In the same pan, add mixed vegetables and cook until tender.",
+            "Add cooked rice, soy sauce, and scrambled eggs. Stir well.",
+            "Season with salt and pepper, and stir in green onions before serving."
+        ],
+        "image": "images/egg-fried-rice.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Berry Smoothie",
+        "description": "A refreshing berry smoothie packed with nutrients.",
+        "ingredients": [
+            "1 cup mixed berries (strawberries, blueberries, raspberries)",
+            "1 banana",
+            "1 cup Greek yogurt",
+            "1/2 cup almond milk (or milk of choice)",
+            "1 tbsp honey (optional)"
+        ],
+        "instructions": [
+            "Combine all ingredients in a blender.",
+            "Blend until smooth, adding more milk for desired consistency.",
+            "Serve immediately, garnished with fresh berries if desired."
+        ],
+        "image": "images/berry-smoothie.jpg"
+    }
+]
+
+

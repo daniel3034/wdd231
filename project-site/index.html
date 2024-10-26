@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Recipe Repository main page.">
+    <meta name="author" content="Daniel Holguin Delgado">
+    <link rel="stylesheet" href="styles/index.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+    <meta property="og:title" content="Online Recipe Repository" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2023/09/Medellin-es-el-corazon-1-1024x512.jpg" />
+    <meta property="og:url" content="https://daniel3034.github.io/wdd231/project-site/index.html" />
+    <title>Online Recipe Repository</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Online Recipe Repository</div>
+        <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger Icon -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="submit.html">Submit Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inbox">
+            <h1>Welcome to Our Online Recipe Repository!</h1>
+            <p>We’re thrilled to have you here! This website is designed to provide you with a diverse collection of delicious recipes, tips for cooking, and inspiration for your next meal. Whether you’re a novice cook or a seasoned chef, we hope you find something that excites your taste buds!</p>
+    
+            <h2>Search Recipes</h2>
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search for recipes...">
+                <button id="search-button">Search</button>
+            </div>
+    
+            <h2>Featured Recipes</h2>
+            <ul id="featured-recipes-list">
+                <!-- Featured recipes will be dynamically added here -->
+            </ul>
+            <p>Explore more recipes by visiting our <a href="recipes.html">Recipes</a> section!</p>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Daniel Holguin Delgado. Colombia.
+        </p>
+        <p id="lastModified"></p>
+
+        <div>
+            <a href="https://github.com/daniel3034">Github</a>|
+            <a href="https://www.linkedin.com/in/daniel-holguin-delgado">Linkedin</a>
+        </div>
+    </footer>
+    <script src="scripts/index.js" defer></script>
+
+</body>
+</html>

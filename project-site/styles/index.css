@@ -1,0 +1,343 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #c8e6c9;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+header .logo {
+    font-size: 26px; /* Slightly larger logo */
+    font-family: 'Lobster', cursive;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #1b5e20;
+    padding: 10px 0;
+    border-radius: 5px; /* Rounded edges */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center navigation items */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #c8e6c9;
+    background-color: #2e7d32; /* Hover background */
+    border-radius: 4px; /* Rounded hover effect */
+}
+
+/* Section Styles */
+#inbox {
+    max-width: 800px; /* Center the main content */
+    margin: 20px auto; /* Centered with margins */
+}
+
+h1 {
+    font-size: 2.5em; /* Increase size for visibility */
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+h2 {
+    font-size: 1.8em; /* Increased subheading size */
+    margin-top: 20px;
+    color: #2e7d32;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #2e7d32; /* Thicker border for visibility */
+    border-radius: 4px; /* Rounded edges */
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-bar button:hover {
+    background-color: #1b5e20;
+}
+
+/* Featured Recipes List */
+#featured-recipes-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    list-style: none;
+}
+
+.featured-recipe {
+    padding: 15px;
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-recipe-image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px;
+    object-fit: cover;
+}
+
+.featured-recipe-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.featured-recipe-description {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0 0 15px;
+}
+
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center social media links */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input, .search-bar button {
+        width: 100%; /* Full width for input and button */
+    }
+}
+
+/* Form Container */
+form {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px; /* Add padding for space inside the form */
+    border: 1px solid #2e7d32; /* Border color */
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 8px; /* Space below labels */
+    font-weight: bold; /* Bold text for labels */
+    color: #2e7d32; /* Color of labels */
+}
+
+/* Input Fields */
+input[type="text"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 0px; /* Padding inside input fields */
+    border: 1px solid #2e7d32;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    padding: 10px 15px; /* Padding for button */
+    background-color: #2e7d32;
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #1c5e27; /* Darker green on hover */
+}
+
+/* Textarea */
+textarea {
+    height: 100px; /* Set a height for text areas */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons on small screens */
+    }
+}
+
+/* Styling for recipes list */
+#featured-recipes-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    list-style: none;
+}
+
+.featured-recipe {
+    padding: 15px;
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-recipe-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px;
+    object-fit: cover;
+}
+
+.featured-recipe-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.featured-recipe-description {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0 0 15px;
+}
+
+.featured-recipe-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.featured-recipe-link:hover {
+    background-color: #1b5e20;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px; /* Adjust size */
+    color: white; /* Color of the hamburger icon */
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show on small screens */
+    }
+
+    nav {
+        display: none; /* Hide nav by default */
+        flex-direction: column; /* Stack vertically */
+        background-color: #1b5e20; /* Same background as header */
+    }
+
+    nav.active {
+        display: flex; /* Show when active */
+    }
+
+    nav ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between links */
+    }
+}
+
+/* Navigation link styles */
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}

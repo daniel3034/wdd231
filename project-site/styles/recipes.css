@@ -1,0 +1,254 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #c8e6c9;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+header .logo {
+    font-size: 26px; /* Slightly larger logo */
+    font-family: 'Lobster', cursive;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #1b5e20;
+    padding: 10px 0;
+    border-radius: 5px; /* Rounded edges */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center navigation items */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #c8e6c9;
+    background-color: #2e7d32; /* Hover background */
+    border-radius: 4px; /* Rounded hover effect */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2e7d32;
+    font-family: 'Lobster', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Recipe List */
+#recipe-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe-item {
+    padding: 15px;
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-item h2 {
+    margin: 0 0 10px;
+}
+
+.recipe-item button {
+    padding: 8px 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recipe-item button:hover {
+    background-color: #1b5e20;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px;
+    object-fit: cover;       /* Crops image if it doesn’t match the container */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    color: #2e7d32;
+}
+
+.close-button {
+    float: right;
+    font-size: 1.5em;
+    color: #2e7d32;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #1b5e20;
+}
+
+/* Footer (Social Media) link styles */
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center social media links */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-item {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .recipe-image {
+        max-width: 100%;     /* Allows image to be more flexible on smaller screens */
+    }
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px; /* Adjust size */
+    color: white; /* Color of the hamburger icon */
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show on small screens */
+    }
+
+    nav {
+        display: none; /* Hide nav by default */
+        flex-direction: column; /* Stack vertically */
+        background-color: #1b5e20; /* Same background as header */
+    }
+
+    nav.active {
+        display: flex; /* Show when active */
+    }
+
+    nav ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between links */
+    }
+}
+
+/* Navigation link styles */
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
